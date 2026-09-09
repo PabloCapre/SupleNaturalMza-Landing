@@ -3,78 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suplementación Natural Mendoza | Rinde al Máximo</title>
-    <meta name="description" content="Potenciá tu rendimiento físico con suplementos directos de fábrica y mixes de frutos secos premium en Mendoza. Ventas por menor y mayor.">
-    <!-- Vinculación del CSS -->
+    <title>Suplementación Natural y Deportiva | Rendimiento y Bienestar</title>
+    <meta name="description" content="Potenciá tus entrenamientos y tu salud con ingredientes reales. Creatina, proteínas, adaptógenos y mixes a medida.">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logos/simple-fondo-blanco.png" type="image/png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts (ejemplo: Roboto, después la podemos cambiar) -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- NAVEGACIÓN -->
-    <header>
-        <div class="logo">
-            <!-- Acá irá la etiqueta <img> con tu logo -->
-            <h2>Suplementación Natural</h2>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="assets/logos/simple-blanco.png" alt="Logo Suplementación Natural" class="nav-logo">
         </div>
-        <nav>
-            <a href="#catalogo">Catálogo</a>
-            <a href="#mayoristas">Para Gimnasios</a>
-        </nav>
+        <ul class="nav-links">
+            <li><a href="#productos">Catálogo</a></li>
+            <li><a href="#calidad">Calidad</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>TU MEJOR VERSIÓN<br>EMPIEZA ACÁ.</h1>
+            <p>Suplementación consciente para cuerpos reales. Fórmulas efectivas, adaptógenos y nutrición de alta calidad para potenciar tu rendimiento físico y mental.</p>
+            <div class="hero-buttons">
+                <a href="#productos" class="btn btn-primary">Ver Catálogo Completo</a>
+                <a href="https://wa.me/549XXXXXXXXX" class="btn btn-outline" target="_blank">Pedir Asesoramiento</a>
+            </div>
+        </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <h1>Suplementación y Nutrición Inteligente en Mendoza</h1>
-        <p>Potenciá tu rendimiento físico con suplementos directos de fábrica y mixes de frutos secos premium.</p>
-        <div class="hero-buttons">
-            <a href="#catalogo" class="btn btn-primary">Ver Catálogo</a>
-            <a href="#mayoristas" class="btn btn-secondary">Plan para Mayoristas</a>
-        </div>
-    </section>
-
-    <!-- SECCIÓN B2C: CATÁLOGO RÁPIDO -->
-    <section id="catalogo" class="productos-b2c">
-        <h2>Nuestros Productos Estrella</h2>
-        <div class="grid-productos">
-            <!-- Tarjeta de Producto (Ejemplo) -->
-            <div class="card-producto">
-                <!-- <img src="assets/productos/creatina.jpg" alt="Creatina"> -->
-                <h3>Creatina Pura Natural Nutrition</h3>
-                <p>Desde $16.500</p>
-                <button class="btn-whatsapp">Pedir por WhatsApp</button>
+    <!-- Productos -->
+    <section id="productos" class="productos-section">
+        
+        <!-- Categoría 1: Deportes (Azul) -->
+        <article class="categoria cat-deporte">
+            <div class="cat-info">
+                <h2>DEPORTE Y RENDIMIENTO</h2>
+                <p>Llevá tus entrenamientos al siguiente nivel. Suplementos clave para mejorar tu fuerza, acelerar tu recuperación y mantener la energía. Creatina monohidratada pura, proteínas vegetales aisladas y pre-entrenos sin aditivos innecesarios.</p>
+                <!-- Atributos listos para el futuro carrito -->
+                <button class="btn btn-accent btn-comprar" data-producto="suplementos-deportivos">Consultar Promos Deportivas</button>
             </div>
-            <!-- Acá multiplicaremos las tarjetas luego -->
+        </article>
+
+        <!-- Categoría 2: Mixes (Dorado) -->
+        <article class="categoria cat-mixes">
+            <div class="cat-info">
+                <h2>MIXES 100% A TU MEDIDA</h2>
+                <p>No compramos un mix ya preparado, lo armás vos. Elegí la proporción exacta de almendras, nueces, castañas de cajú, avellanas, chips de banana, ananá en cubitos, pasas y arándanos para crear el equilibrio nutricional que tu rutina necesita.</p>
+                <button class="btn btn-accent btn-comprar" data-producto="mix-personalizado">Armar mi Mix Ideal</button>
+            </div>
+        </article>
+
+        <!-- Categoría 3: Bienestar (Verde) -->
+        <article class="categoria cat-bienestar">
+            <div class="cat-info">
+                <h2>EQUILIBRIO NATURAL</h2>
+                <p>Porque cada cuerpo tiene una necesidad distinta. Descubrí el poder de los adaptógenos puros (Melena de León, Ashwagandha, Cordyceps), sumado a nuestros aceites de oliva extra virgen y miel natural, para cuidar tu salud diaria.</p>
+                <button class="btn btn-accent btn-comprar" data-producto="bienestar-adaptogenos">Encontrar mi Balance</button>
+            </div>
+        </article>
+
+    </section>
+
+    <!-- Propuesta de Valor -->
+    <section id="calidad" class="features-section">
+        <div class="feature">
+            <h3>✓ Calidad Real</h3>
+            <p>Sin ingredientes de relleno ni fórmulas mágicas.</p>
+        </div>
+        <div class="feature">
+            <h3>✓ Asesoramiento</h3>
+            <p>Te ayudamos a elegir lo que tu cuerpo realmente necesita.</p>
+        </div>
+        <div class="feature">
+            <h3>✓ Envíos Rápidos</h3>
+            <p>Logística ágil en Mendoza y a todo el país.</p>
         </div>
     </section>
 
-    <!-- SECCIÓN B2B: MARCA BLANCA -->
-    <section id="mayoristas" class="b2b-section">
-        <h2>¿Tenés un gimnasio o dietética? Multiplicá tus ingresos.</h2>
-        <ul>
-            <li>Precios mayoristas directos (distribuidores oficiales).</li>
-            <li>Servicio de "Marca Blanca": mixes y suplementos con el logo de tu gimnasio.</li>
-            <li>Stock garantizado y entrega rápida en Mza.</li>
-        </ul>
-        <button class="btn-contacto">Solicitar Lista Mayorista</button>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 Suplementación Natural Mendoza. Todos los derechos reservados.</p>
-        <p>Envíos a Luján de Cuyo y alrededores.</p>
-        <!-- Link a tu Instagram -->
-        <a href="https://www.instagram.com/suplementacionnaturalmza/" target="_blank">Seguinos en Instagram</a>
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="assets/logos/suple-natural-blanco.png" alt="Suplementación Natural" class="footer-logo">
+        <p>¿Dudas sobre cómo combinar tus suplementos o armar tu mix?<br>Escribinos y lo armamos juntos.</p>
+        <a href="https://wa.me/549XXXXXXXXX" class="btn btn-primary btn-whatsapp" target="_blank">Chatear por WhatsApp</a>
+        
+        <div class="footer-credits">
+            <p>Powered by <strong>WAFLERS</strong></p>
+        </div>
     </footer>
 
-    <!-- BOTÓN FLOTANTE WHATSAPP -->
-    <a href="#" class="float-whatsapp">
-        <!-- Acá pondremos el ícono de WP -->
-        WP
-    </a>
-
-    <!-- Vinculación del JS -->
-    <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
